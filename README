@@ -1,0 +1,45 @@
+Copyright (c) 2011 Zach Wick
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the "Software"), to deal in
+the Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
+of the Software, and to permit persons to whom the Software is furnished to do
+so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+
+License:
+  jPieGraph is released under the MIT License - www.opensource.org/licenses/mit-license.php
+
+Requirements:
+  jQuery:
+     jPieGraph is tested and confirmed to work with jQuery v1.7. Earlier versions have not bee tested.
+  Browser:
+     The jPieGraph plugin makes use of the canvas element, so the browser must support using the canvas tag.
+
+
+Basic Use:
+  To use the jPieGraph plugin, simply include jQuery and jquery.jpiegraph.js in your html document or load them however your web framework of choice requires.
+  Then simply execute:
+     jQuery("#pie_graph_container_id").pie_graph({
+	data:YOUR_DATA_ARRAY_HERE
+     });
+
+
+Advanced Use:
+  To use your own color scheme, simply pass in the colors' hex codes when you call .pie_graph on a jQuery object.
+  jQuery("#pie_graph_container_id").pie_graph({
+     data:YOUR_DATA_ARRAY_HERE,
+     colors:["#CCC","#FFF",#"F2F2F2"];
+  });  
+
